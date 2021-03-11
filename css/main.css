@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background-image: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  background: white;
+  text-align: center;
+  margin: 2em 1em;
+  border-radius: 3%;
+}
+
+.container .woman-svg {
+  position: absolute;
+  top: -2px;
+  left: 41px;
+}
+
+.container .pattern-svg {
+  position: relative;
+}
+
+.container p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1em;
+}
+
+.container .accordion-card {
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0 0.5em 2em 0.5em;
+  text-align: justify;
+}
+
+.container .accordion-card .accordion-item {
+  list-style-type: none;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.container .accordion-card .accordion-item a {
+  display: block;
+  text-decoration: none;
+  padding: 1em 1.5em;
+  font-size: 12px;
+  font-weight: 400;
+  color: #4a4b5e;
+}
+
+.container .accordion-card .accordion-item a::after {
+  content: url(/images/icon-arrow-down.svg);
+  float: right;
+}
+
+.container .accordion-card .accordion-item a:active,
+.container .accordion-card .accordion-item :hover {
+  font-weight: 700;
+}
+
+.container .accordion-card .accordion-item a:visited {
+  color: #4a4b5e;
+}
+
+.container .accordion-card .accordion-item .accordion-item-desc {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+
+.container .accordion-card .accordion-item .accordion-item-desc p {
+  color: #787887;
+  padding: 1em 1.5em;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.container .accordion-card .accordion-item:target .accordion-item-desc {
+  max-height: 10em;
+}
+/*# sourceMappingURL=main.css.map */

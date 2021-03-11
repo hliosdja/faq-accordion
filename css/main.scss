@@ -1,0 +1,96 @@
+$bgGradient1: #af67e9;
+$bgGradient2: #6565e7;
+$divider: #e7e7e9;
+$accordionItems: #4a4b5e;
+$accordionDescription: #787887;
+
+$textSize: 12px;
+$bold: 700;
+$regular: 400;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient($bgGradient1, $bgGradient2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+
+  text-align: center;
+  margin: 2em 1em;
+  border-radius: 3%;
+
+  .woman-svg {
+    position: absolute;
+    top: -2px;
+    left: 41px;
+  }
+  .pattern-svg {
+    position: relative;
+  }
+
+  p {
+    font-size: 2em;
+    font-weight: $bold;
+    margin: 1em;
+  }
+  .accordion-card {
+    margin: 0 0.5em 1em 0.5em;
+    padding: 0 0.5em 2em 0.5em;
+    text-align: justify;
+
+    .accordion-item {
+      list-style-type: none;
+      border-bottom: 1px solid $divider;
+
+      a {
+        display: block;
+
+        text-decoration: none;
+        padding: 1em 1.5em;
+        font-size: $textSize;
+        font-weight: $regular;
+        color: $accordionItems;
+      }
+      a::after {
+        content: url(/images/icon-arrow-down.svg);
+        float: right;
+      }
+      a:active,
+      :hover {
+        font-weight: $bold;
+      }
+      a:visited {
+        color: $accordionItems;
+      }
+
+      .accordion-item-desc {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+        p {
+          color: $accordionDescription;
+          padding: 1em 1.5em;
+          font-size: $textSize;
+          font-weight: $regular;
+        }
+      }
+    }
+
+    .accordion-item:target .accordion-item-desc {
+      max-height: 10em;
+    }
+  }
+}
