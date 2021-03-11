@@ -28,23 +28,27 @@ body {
   background: white;
 
   text-align: center;
-  margin: 2em 1em;
+  margin: 7.7em 1em 2em 1em;
   border-radius: 3%;
 
-  .woman-svg {
-    position: absolute;
-    top: -2px;
-    left: 41px;
-  }
-  .pattern-svg {
+  .img-container {
     position: relative;
+
+    .pattern-svg {
+      position: absolute;
+      margin-left: -15em;
+    }
+    .woman-svg {
+      margin-top: -6.7em;
+    }
   }
 
   p {
     font-size: 2em;
     font-weight: $bold;
-    margin: 1em;
+    margin: 1.5em 1em 1em 1em;
   }
+
   .accordion-card {
     margin: 0 0.5em 1em 0.5em;
     padding: 0 0.5em 2em 0.5em;
@@ -78,7 +82,7 @@ body {
       .accordion-item-desc {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: max-height 0.3s;
 
         p {
           color: $accordionDescription;

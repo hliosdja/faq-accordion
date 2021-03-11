@@ -24,24 +24,27 @@ body {
 .container {
   background: white;
   text-align: center;
-  margin: 2em 1em;
+  margin: 7.7em 1em 2em 1em;
   border-radius: 3%;
 }
 
-.container .woman-svg {
-  position: absolute;
-  top: -2px;
-  left: 41px;
+.container .img-container {
+  position: relative;
 }
 
-.container .pattern-svg {
-  position: relative;
+.container .img-container .pattern-svg {
+  position: absolute;
+  margin-left: -15em;
+}
+
+.container .img-container .woman-svg {
+  margin-top: -6.7em;
 }
 
 .container p {
   font-size: 2em;
   font-weight: 700;
-  margin: 1em;
+  margin: 1.5em 1em 1em 1em;
 }
 
 .container .accordion-card {
@@ -81,8 +84,8 @@ body {
 .container .accordion-card .accordion-item .accordion-item-desc {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.5s;
-  transition: max-height 0.5s;
+  -webkit-transition: max-height 0.3s;
+  transition: max-height 0.3s;
 }
 
 .container .accordion-card .accordion-item .accordion-item-desc p {
