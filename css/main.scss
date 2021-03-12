@@ -102,16 +102,13 @@ body {
 @media only screen and (min-width: 1200px) {
   .container {
     display: flex;
+    align-items: center;
+    width: 70%;
+    margin-top: 1em;
     border-radius: 25px;
 
     .img-container {
       flex: 1;
-      background: url(/images/bg-pattern-desktop.svg);
-      width: 500px;
-      height: 500px;
-      background-repeat: no-repeat;
-      background-position: left -10vw;
-
       .woman-mobile-svg {
         display: none;
       }
