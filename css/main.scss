@@ -29,7 +29,6 @@ body {
   margin: 7.7em 1em 2em 1em;
   border-radius: 10px;
   width: 80%;
-  height: 70vh;
 
   .mobile-img-container {
     position: relative;
@@ -47,57 +46,60 @@ body {
     display: none;
   }
 
-  .accordion-card {
-    margin: 0 0.5em 1em 0.5em;
-    padding: 0 1em 2em 1em;
-    text-align: justify;
-
+  .accordion-container {
     .FAQ {
       font-size: 2em;
       font-weight: $bold;
       margin: 1.5em 1em 1em 1em;
       text-align: center;
     }
-    .accordion-item {
-      list-style-type: none;
-      border-bottom: 1px solid $divider;
 
-      a {
-        display: block;
-        text-decoration: none;
-        padding: 1em 0;
-        font-size: $textSize;
-        font-weight: $regular;
-        color: $accordionItems;
-      }
-      a::after {
-        content: url(/images/icon-arrow-down.svg);
-        float: right;
-      }
-      a:active,
-      :hover {
-        font-weight: $bold;
-      }
-      a:visited {
-        color: $accordionItems;
-      }
+    .accordion-card {
+      margin: 0 0.5em 1em 0.5em;
+      padding: 0 1em 2em 1em;
+      text-align: justify;
 
-      .accordion-item-desc {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s;
+      .accordion-item {
+        list-style-type: none;
+        border-bottom: 1px solid $divider;
 
-        p {
-          color: $accordionDescription;
-          padding: 1em 1.5em;
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 1em 0;
           font-size: $textSize;
           font-weight: $regular;
+          color: $accordionItems;
+        }
+        a::after {
+          content: url(/images/icon-arrow-down.svg);
+          float: right;
+        }
+        a:active,
+        :hover {
+          font-weight: $bold;
+        }
+        a:visited {
+          color: $accordionItems;
+        }
+
+        .accordion-item-desc {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s;
+
+          p {
+            color: $accordionDescription;
+            padding: 1em 1.5em;
+            font-size: $textSize;
+            font-weight: $regular;
+          }
         }
       }
-    }
 
-    .accordion-item:target .accordion-item-desc {
-      max-height: 10em;
+      .accordion-item:target .accordion-item-desc {
+        max-height: 10em;
+      }
     }
   }
 }
@@ -107,7 +109,7 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
-    margin-top: 1em;
+    margin-top: 1rem;
     border-radius: 25px;
     height: 50vh;
     box-shadow: 0 20px 30px -15px;
@@ -146,12 +148,12 @@ body {
       }
     }
 
-    .accordion-card {
+    .accordion-container {
       flex: 1;
 
       .FAQ {
         text-align: justify;
-        margin-left: 0;
+        margin-left: 1.5rem;
       }
     }
   }

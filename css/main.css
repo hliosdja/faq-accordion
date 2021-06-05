@@ -27,7 +27,6 @@ body {
   margin: 7.7em 1em 2em 1em;
   border-radius: 10px;
   width: 80%;
-  height: 70vh;
 }
 
 .container .mobile-img-container {
@@ -47,25 +46,25 @@ body {
   display: none;
 }
 
-.container .accordion-card {
-  margin: 0 0.5em 1em 0.5em;
-  padding: 0 1em 2em 1em;
-  text-align: justify;
-}
-
-.container .accordion-card .FAQ {
+.container .accordion-container .FAQ {
   font-size: 2em;
   font-weight: 700;
   margin: 1.5em 1em 1em 1em;
   text-align: center;
 }
 
-.container .accordion-card .accordion-item {
+.container .accordion-container .accordion-card {
+  margin: 0 0.5em 1em 0.5em;
+  padding: 0 1em 2em 1em;
+  text-align: justify;
+}
+
+.container .accordion-container .accordion-card .accordion-item {
   list-style-type: none;
   border-bottom: 1px solid #e7e7e9;
 }
 
-.container .accordion-card .accordion-item a {
+.container .accordion-container .accordion-card .accordion-item a {
   display: block;
   text-decoration: none;
   padding: 1em 0;
@@ -74,35 +73,35 @@ body {
   color: #4a4b5e;
 }
 
-.container .accordion-card .accordion-item a::after {
+.container .accordion-container .accordion-card .accordion-item a::after {
   content: url(/images/icon-arrow-down.svg);
   float: right;
 }
 
-.container .accordion-card .accordion-item a:active,
-.container .accordion-card .accordion-item :hover {
+.container .accordion-container .accordion-card .accordion-item a:active,
+.container .accordion-container .accordion-card .accordion-item :hover {
   font-weight: 700;
 }
 
-.container .accordion-card .accordion-item a:visited {
+.container .accordion-container .accordion-card .accordion-item a:visited {
   color: #4a4b5e;
 }
 
-.container .accordion-card .accordion-item .accordion-item-desc {
+.container .accordion-container .accordion-card .accordion-item .accordion-item-desc {
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 0.3s;
   transition: max-height 0.3s;
 }
 
-.container .accordion-card .accordion-item .accordion-item-desc p {
+.container .accordion-container .accordion-card .accordion-item .accordion-item-desc p {
   color: #787887;
   padding: 1em 1.5em;
   font-size: 12px;
   font-weight: 400;
 }
 
-.container .accordion-card .accordion-item:target .accordion-item-desc {
+.container .accordion-container .accordion-card .accordion-item:target .accordion-item-desc {
   max-height: 10em;
 }
 
@@ -115,7 +114,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 50%;
-    margin-top: 1em;
+    margin-top: 1rem;
     border-radius: 25px;
     height: 50vh;
     -webkit-box-shadow: 0 20px 30px -15px;
@@ -153,14 +152,14 @@ body {
     margin-top: -25rem;
     margin-left: -42rem;
   }
-  .container .accordion-card {
+  .container .accordion-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
   }
-  .container .accordion-card .FAQ {
+  .container .accordion-container .FAQ {
     text-align: justify;
-    margin-left: 0;
+    margin-left: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
